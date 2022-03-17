@@ -2,7 +2,7 @@
   --white: white;
   --blue: rgb(67, 140, 223);
   --black: rgb(0, 0, 0);
-  --yellow: #f1b717;
+  --yellow: rgb(241, 183, 23);
   --grey: rgb(63, 63, 63);
   --orange: #ff8800;
 }
@@ -46,7 +46,11 @@ body {
   color: white;
   border-radius: 5px;
 }
-
+.signin-btn:hover{
+  /* color: rgb(155, 151, 151); */
+  background-color: grey;
+  transition: 0.5s;
+}
 
 .navbar-items a{
   color: black;
@@ -83,19 +87,20 @@ body {
   color: black;
 }
 
-.navbar img {
+.navbar-img {
   max-height: 80%;
   margin: 10px;
   position: absolute;
   left: 0;
-  
 }
-.icon-burger {
-  
+
+.checkbox {
+  display: none;
 }
-.icon-burger .line {
-  
+.icon-burger-img {
+  display: none;
 }
+
 .body-cards {
   height: 80%;
   background-color: rgba(223, 223, 223, 0.527);
@@ -166,8 +171,6 @@ body {
 }
 
 .data:hover {
-  /* background-color: #176ef1; */
-  /* transition: background-color 2s; */
   transform: scale(1.2);
 }
 .inputCommon{
@@ -228,6 +231,13 @@ textarea:focus {
 
 
 @media screen and (max-width:768px) {
+  .icon-burger img {
+    max-height: 80%;
+    margin: 10px;
+  }
+  .navbar {
+    justify-content: flex-end;
+  }
   .navbar-items{
     display: none;
   }
@@ -245,7 +255,11 @@ textarea:focus {
     /* height: 70%; */
     width: 80%;
   }
-  .drop-down {
+  
+  .checkbox:checked ~ .drop-down{
+    opacity: 1;
+    visibility:visible;
+    transition: opacity 0.3s ease-out;
     background-color: white;
     display: flex;
     /* display: none; */
@@ -259,5 +273,16 @@ textarea:focus {
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
+  }
+  .checkbox:checked ~ .drop-down a:hover{
+    color: rgb(155, 151, 151);
+  }
+
+  .icon-burger-img {
+    display: block;
+    height: 48px;
+    margin-right: 10px;
+    color: #f1b717;
+    background-color: #ff8800;
   }
 }
