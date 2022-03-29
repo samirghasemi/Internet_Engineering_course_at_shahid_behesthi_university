@@ -10,7 +10,7 @@ const INPUT_STATES = {
 const Input = props => {
    return (
      <div className='form-input' data-testid="form-input">
-       <label></label>
+       <label>{this.label}</label>
        <input />
        <p></p>
      </div>
