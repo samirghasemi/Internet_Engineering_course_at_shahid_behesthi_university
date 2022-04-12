@@ -1,12 +1,19 @@
 import React from 'react';
+import NotFound from './NotFound';
 
 export default class MovieDetail extends React.Component {
     constructor(props) {
         super(props);
-
         this.state = {
             movie: {}
         }
+    }
+
+    componentDidMount() {
+        fetch('http://localhost:9000/movies/' + this.props.match.params.id).then(res => res.json()).then(movie => {
+                this.setState({'movie': movie})
+            }
+        ).catch(e => this.setState({error: true}))
     }
 
     render() {
