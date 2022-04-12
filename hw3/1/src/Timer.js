@@ -18,7 +18,6 @@ export class Timer extends Component {
     }
 
     resetTimer() {
-        // console.log("reset")
         this.setState({
             time: 0
         })
@@ -35,5 +34,8 @@ export class Timer extends Component {
             </div>
             <button onClick={this.resetTimer} >Reset Timer</button>
         </div>;
+    }
+    componentWillUnmount(){
+        clearInterval(this.resetTimer)
     }
 }
