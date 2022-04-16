@@ -15,16 +15,19 @@ const Input = ({
                    errorText,
                }) => {
 
-    const [state , setState]=useState(INPUT_STATES.UNTOUCHED)
+    const [state, setState] = useState(INPUT_STATES.UNTOUCHED)
     // console.log({validators,value,state})
     // console.log(validate(value , validators))
     return (
-        <div className={`form-input ${state===INPUT_STATES.INVALID ? 'form-input--invalid':''}` } data-testid="form-input">
+        <div className={`form-input ${state === INPUT_STATES.INVALID ? 'form-input--invalid' : ''}`}
+             data-testid="form-input">
             <label htmlFor={id}>{label}</label>
-            <input type={type} id={id} onChange={(e)=> {
-                validate(e.target.value , validators) ? setState(INPUT_STATES.VALID) : setState(INPUT_STATES.INVALID);
+            <input type={type} id={id} onChange={(e) => {
+                validate(e.target.value, validators) ? setState(INPUT_STATES.VALID) : setState(INPUT_STATES.INVALID);
+            }} onBlur={(e) => {
+                validate(e.target.value, validators) ? setState(INPUT_STATES.VALID) : setState(INPUT_STATES.INVALID);
             }}/>
-            {state===INPUT_STATES.INVALID &&  <p>{errorText}</p>}
+            {state === INPUT_STATES.INVALID && <p>{errorText}</p>}
         </div>
     )
 }
