@@ -1,34 +1,39 @@
-import React, {useState} from 'react';
-import {validate} from './validators';
+import React, { useState } from "react";
+import { validate } from "./validators";
 
 const INPUT_STATES = {
-    UNTOUCHED: 'UNTOUCHED',
-    VALID: 'VALID',
-    INVALID: 'INVALID'
+    UNTOUCHED: "UNTOUCHED",
+    VALID: "VALID",
+    INVALID: "INVALID",
 };
 
-const Input = ({
-                   type,
-                   label,
-                   id,
-                   validators,
-                   errorText,
-               }) => {
+const Input = (props) => {
+    const [inputUntouched, inputUntouchedset] = useState(true);
+    const [inputValue, inputValueset] = useState("");
+    const [inputIsValid, setInputIsValid] = useState(true);
 
-    const [state, setState] = useState(INPUT_STATES.UNTOUCHED)
-    // console.log({validators,value,state})
-    // console.log(validate(value , validators))
+    const inputOnblurhandler = (event) => {
+        if (inputValue.trim() === "") {
+            inputUntouchedset(false);
+            setInputIsValid(false);
+        }
+    };
+
+    const inputOnchangehandler = (event) => {
+        inputUntouchedset(true);
+        inputValueset(event.target.value);
+        setInputIsValid(validate(event.target.value, props.validators));
+    };
+    const error = inputUntouched && inputIsValid;
+    console.log(error);
+    const form = `form-input ${error ? "" : "form-input--invalid"}`;
     return (
-        <div className={`form-input ${state === INPUT_STATES.INVALID ? 'form-input--invalid' : ''}`}
-             data-testid="form-input">
-            <label htmlFor={id}>{label}</label>
-            <input type={type} id={id} onChange={(e) => {
-                validate(e.target.value, validators) ? setState(INPUT_STATES.VALID) : setState(INPUT_STATES.INVALID);
-            }} onBlur={(e) => {
-                validate(e.target.value, validators) ? setState(INPUT_STATES.VALID) : setState(INPUT_STATES.INVALID);
-            }}/>
-            {state === INPUT_STATES.INVALID && <p>{errorText}</p>}
+        <div className={form} data-testid="form-input">
+            <label htmlFor="{props.id}">{props.label}</label>
+            <input onBlur={inputOnblurhandler} onChange={inputOnchangehandler} />
+            {!error && <p>{props.errorText}</p>}
         </div>
-    )
-}
+    );
+};
+
 export default Input;
