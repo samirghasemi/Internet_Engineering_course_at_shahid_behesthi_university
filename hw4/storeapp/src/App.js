@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import React from 'react';
+
 import './App.css';
+import Cart from "./component/Cart";
+import NotFound from "./component/NotFound";
+import Stuffs from "./component/Stuffs";
+import Stuff from "./component/Stuff";
+import Navbar from "./component/Navbar";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Navbar/>
+                <Routes>
+                    <Route exact path="/" element={< Stuffs/>}/>
+                    <Route exact path="/stuffs" element={< Stuffs/>}/>
+                    <Route exact path="/smartphones" element={< Stuffs/>}/>
+                    <Route exact path="/laptops" element={< Stuffs/>}/>
+                    <Route path="/stuffs/:id" element={< Stuff/>}/>
+                    <Route exact path="/cart" element={< Cart/>}/>
+                    <Route path="*" element={<NotFound/>}/>
+                </Routes>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;

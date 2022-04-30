@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f869d8-582c-414f-8128-5e57d64b32c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../hw2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw2/.idea/hw2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/Cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/DetailModal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/DetailModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/Navbar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/NotFound.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/Stuff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/StuffCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/StuffList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/Stuffs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/server/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/server/movies-detail.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/server/movies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/server/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/IranMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IranMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4/src/components/MovieDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../4/src/components/MovieDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +64,22 @@
       <workItem from="1649760986387" duration="596000" />
       <workItem from="1649784635471" duration="536000" />
       <workItem from="1649790558477" duration="1009000" />
+      <workItem from="1651290769135" duration="5036000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
