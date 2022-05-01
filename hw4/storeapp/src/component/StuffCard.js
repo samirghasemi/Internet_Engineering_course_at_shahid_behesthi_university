@@ -8,13 +8,13 @@ export default class StuffCard extends React.Component {
             <img className="card-img" src={this.props.stuff.img} alt=""/>
             <div className='card-body'>
                 <Link to={"/stuffs/" + this.props.stuff.id}>
-                    <h3>{this.props.stuff.title}</h3>
+                    <h3 className='card-title'>{this.props.stuff.title}</h3>
                 </Link>
                 <div className='card-description'>
-                    <p>{this.props.stuff.price}</p>
+                    <p>{"R$"+this.props.stuff.price}</p>
                     <p>{this.props.stuff.size}</p>
                 </div>
-                <button className='card-btn'>Add to cart  <img className='addToCartbtn' src={addToCart} alt=""/></button>
+                <button className='card-btn'>Add to cart <img className='addToCartbtn' src={addToCart} alt=""/></button>
             </div>
         </div>);
     }

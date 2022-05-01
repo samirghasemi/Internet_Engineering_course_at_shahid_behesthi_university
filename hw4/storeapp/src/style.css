@@ -33,9 +33,16 @@
     padding: 20px;
     width: 80%;
 }
-
+.card-title {
+    width: 90%;
+    text-align: left;
+}
 .card-body {
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .card-description {

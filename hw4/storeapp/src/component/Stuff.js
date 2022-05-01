@@ -44,7 +44,7 @@ export default class Stuff extends React.Component {
                 </div>
                 <div>
                     <h3>{this.state.stuff.title}</h3>
-                    <h4>{this.state.stuff.price}</h4>
+                    <h4>{"R$"+this.state.stuff.price}</h4>
                     <button>Buy Now</button>
                     <button onClick={this.openModal}>More Info</button>
                 </div>
