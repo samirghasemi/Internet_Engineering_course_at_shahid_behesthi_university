@@ -2,10 +2,10 @@ import {BrowserRouter, Routes, Route , Switch} from "react-router-dom";
 import React from 'react';
 
 import './App.css';
-import Cart from "./component/Cart";
+import Cart from "./component/cart/Cart";
 import NotFound from "./component/NotFound";
-import Stuffs from "./component/Stuffs";
-import Stuff from "./component/Stuff";
+import Stuffs from "./component/stuff/Stuffs";
+import Stuff from "./component/stuff/Stuff";
 import Navbar from "./component/Navbar";
 
 function App() {

@@ -3,10 +3,6 @@ import {Link} from 'react-router-dom'
 import StuffCard from "./StuffCard";
 
 export default class StuffList extends React.Component {
-    constructor(props) {
-        super(props);
-        console.log("hi")
-    }
     render() {
         return (
             <div className='card-list'>

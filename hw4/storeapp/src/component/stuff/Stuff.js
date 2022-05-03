@@ -1,15 +1,18 @@
 import React from 'react';
-import NotFound from "./NotFound";
-import addToCart from "../shopping-cart.png";
+import NotFound from "../NotFound";
+import addToCartLogo from "../../shopping-cart.png";
 import ReactStars from "react-rating-stars-component";
-import DetailModal from "./DetailModal";
+import DetailModal from "../modal/DetailModal";
+import {connect} from "react-redux";
+import {addToCart} from "../../redux/shopping/shopping-actions"
+import {bindActionCreators} from "redux";
 
 
 
 
 
 
-export default class Stuff extends React.Component {
+class Stuff extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -23,12 +26,23 @@ export default class Stuff extends React.Component {
     ratingChanged = (newRating) => {
         console.log(newRating);
     };
+    //using server
+    // componentDidMount() {
+    //     const id =this.props.match.params.id;
+    //     fetch('http://localhost:9176/stuff/' + id)
+    //         .then(res => res.json())
+    //         .then(stuff => this.setState({'stuff': stuff})
+    //         ).catch(e => this.setState({error: true}))
+    // }
+
+    //using redux
     componentDidMount() {
         const id =this.props.match.params.id;
-        fetch('http://localhost:9176/stuff/' + id)
-            .then(res => res.json())
-            .then(stuff => this.setState({'stuff': stuff})
-            ).catch(e => this.setState({error: true}))
+        let product = this.props.products.find(prod => prod.id == id)
+        if(product==null){
+            this.setState({'error': true})
+        }
+        this.setState({'stuff': product})
     }
 
     closeModal = () => {
@@ -62,8 +76,8 @@ export default class Stuff extends React.Component {
                     <div className='stuff-detail'>
                         <h2>{this.state.stuff.title}</h2>
                         <h4>{"R$"+this.state.stuff.price}</h4>
-                        <button className='stuff-detail-buy'>Buy Now  <img className='addToCartbtn' src={addToCart} alt=""/></button>
-                        <button className='stuff-detail-info' onClick={this.openModal}>More Info</button>
+                        <a className='stuff-detail-buy' onClick={() => this.props.addToCartD(this.state.stuff.id)}>Buy Now  <img className='addToCartbtn' src={addToCartLogo} alt=""/></a>
+                        <a className='stuff-detail-info' onClick={this.openModal}>More Info</a>
                     </div>
                     <DetailModal detail={this.state.stuff.detail} isOpen={this.state.isModalOpen} onClose={this.closeModal}/>
 
@@ -73,3 +87,15 @@ export default class Stuff extends React.Component {
     }
 }
 
+
+function mapStateToProps(state){
+    return{
+        products: state.shop.products
+    };
+};
+
+function mapDispatchToProps(dispatch){
+    return bindActionCreators({addToCartD: addToCart}, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Stuff)

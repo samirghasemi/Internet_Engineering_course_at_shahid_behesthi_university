@@ -1,8 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import addToCart from '../shopping-cart.png';
+import addToCartLogo from '../../shopping-cart.png';
+import {bindActionCreators} from "redux";
+import {addToCart} from "../../redux/shopping/shopping-actions";
+import {connect} from "react-redux";
 
-export default class StuffCard extends React.Component {
+class StuffCard extends React.Component {
     render() {
         return (<div className='stuff-card'>
             <img className="card-img" src={this.props.stuff.img} alt=""/>
@@ -16,9 +19,16 @@ export default class StuffCard extends React.Component {
                     <p>{"R$"+this.props.stuff.price}</p>
                     <p>{this.props.stuff.size}</p>
                 </div>
-                <button className='card-btn'>Add to cart <img className='addToCartbtn' src={addToCart} alt=""/></button>
+                <a className='card-btn' onClick={() => this.props.addToCartD(this.props.stuff.id)}>
+                    Add to cart <img className='addToCartbtn' src={addToCartLogo} alt=""/>
+                </a>
             </div>
         </div>);
     }
 }
 
+function mapDispatchToProps(dispatch){
+    return bindActionCreators({addToCartD: addToCart}, dispatch);
+};
+
+export default connect(null,mapDispatchToProps)(StuffCard)
