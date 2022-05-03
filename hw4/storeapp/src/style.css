@@ -1,7 +1,10 @@
 .App {
     background-color: #FAFAFA;
-    min-height: 100%;
+    min-height: 100vh;
+    height: 100%;
+    width: 100vw;
 }
+
 .navbar {
     background-color: #333333;
     position: relative;
@@ -14,30 +17,102 @@
     color: aliceblue;
 }
 
+.navbar-items{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-item{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    padding: 25px;
+}
+
+/*.navbar-cart{*/
+/*    background-color: #2D9CDB;*/
+/*    color: white;*/
+/*    width: 200px;*/
+/*    height: 40px;*/
+/*    border: none;*/
+/*    font-size: 15px;*/
+/*    border-radius: 5px;*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    flex-direction: row;*/
+/*    align-content: space-around;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    margin-left: 150px;*/
+/*}*/
+
+/*.navbar-cart .card-body-link{*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    flex-direction: row;*/
+/*    align-content: space-around;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    margin-left: 150px;*/
+/*}*/
+.card-body-link {
+    text-decoration: none;
+    background-color: #2D9CDB;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+}
 
 .stuff-card {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     background-color: white;
-    /*border: 1px solid rgba(0, 0, 0, .125);*/
     width: 28%;
-    height: 600px;
+    height: 350px;
     margin: 1em;
     border-radius: 10px;
+    padding: 15px 10px 0 10px;
 }
 
 .card-img {
-    padding: 20px;
-    width: 80%;
+    /*padding: 20px;*/
+    /*width: 100%;*/
+    height: 150px;
 }
+
 .card-title {
     width: 90%;
-    text-align: left;
+    height: 70px;
 }
+
+.card-title h3{
+    text-align: left;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.card-title a{
+    text-decoration: none;
+}
+
 .card-body {
+    width: 90%;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -45,7 +120,10 @@
     flex-wrap: wrap;
 }
 
+
+
 .card-description {
+    width: 90%;
     text-align: justify;
     display: flex;
     flex-direction: row;
@@ -65,13 +143,14 @@
     justify-content: center;
 }
 
-.card-btn{
+.card-btn {
     background-color: #27AE60;
     color: white;
-    width: 90%;
+    width: 100%;
     height: 40px;
     border: none;
-    border-radius: 10px;
+    font-size: 15px;
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -79,6 +158,83 @@
     align-items: center;
     justify-content: center;
 }
-.addToCartbtn{
+
+.addToCartbtn {
     filter: invert(100%);
 }
+
+.stuff{
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.stuff-img{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.stuff-img .review{
+    width: 100%;
+}
+.stuff-img p{
+    text-align: left;
+    margin-left: 80px;
+}
+
+.stuff-img img{
+    height: 100%;
+}
+
+.stuff-detail{
+    width: 60%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.stuff-detail-buy{
+    width: 70%;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #27AE60;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.stuff-detail-buy img{
+    margin-left: 10px;
+}
+.stuff-detail-info{
+    height: 50px;
+    width: 70%;
+    margin: 5px;
+    background-color: #2D9CDB;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+

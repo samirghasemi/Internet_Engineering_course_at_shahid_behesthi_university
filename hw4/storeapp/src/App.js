@@ -1,4 +1,4 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route , Switch} from "react-router-dom";
 import React from 'react';
 
 import './App.css';
@@ -13,15 +13,16 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Navbar/>
-                <Routes>
-                    <Route exact path="/" element={< Stuffs/>}/>
-                    <Route exact path="/stuffs" element={< Stuffs/>}/>
-                    <Route exact path="/smartphones" element={< Stuffs/>}/>
-                    <Route exact path="/laptops" element={< Stuffs/>}/>
-                    <Route path="/stuffs/:id" element={< Stuff/>}/>
-                    <Route exact path="/cart" element={< Cart/>}/>
-                    <Route path="*" element={<NotFound/>}/>
-                </Routes>
+                <Switch>
+                    <Route exact path="/" children={<Stuffs type={''}/>}/>
+                    <Route path="/stuffs/:id" component={Stuff}/>
+                    <Route exact path="/stuffs" children={<Stuffs type={''}/>}/>
+                    <Route path="/smartphones" children={<Stuffs type={'smartphone'}/>}/>
+                    <Route path="/laptops" children={<Stuffs type={'notebook'}/>}/>
+                    <Route path="/cart" children={<Cart/>}/>
+                    <Route component={NotFound} />
+
+                </Switch>
             </div>
         </BrowserRouter>
     );

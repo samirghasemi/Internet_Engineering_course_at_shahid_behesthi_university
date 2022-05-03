@@ -6,7 +6,7 @@ export default class Stuffs extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            stuffs: []
+            stuffs: [],
         };
     }
 
@@ -17,8 +17,10 @@ export default class Stuffs extends React.Component {
     }
 
     render() {
-        return (<div className='container'>
-            <StuffList stuffs={this.state.stuffs}/>
-        </div>);
+        return (
+            <div className='container'>
+                <StuffList stuffs={this.state.stuffs} type={this.props.type}/>
+            </div>
+        );
     }
 }

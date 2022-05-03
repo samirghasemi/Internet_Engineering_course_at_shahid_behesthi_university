@@ -1,8 +1,13 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
-import {useHistory, useParams} from 'react-router-dom'
-import DetailModal from "./DetailModal";
 import NotFound from "./NotFound";
+import addToCart from "../shopping-cart.png";
+import ReactStars from "react-rating-stars-component";
+import DetailModal from "./DetailModal";
+
+
+
+
+
 
 export default class Stuff extends React.Component {
     constructor(props) {
@@ -10,9 +15,20 @@ export default class Stuff extends React.Component {
         this.state = {
             stuff: {},
             error: false,
-            isModalOpen: false,
-            onClose: false,
+            isModalOpen: false
         }
+    }
+
+
+    ratingChanged = (newRating) => {
+        console.log(newRating);
+    };
+    componentDidMount() {
+        const id =this.props.match.params.id;
+        fetch('http://localhost:9176/stuff/' + id)
+            .then(res => res.json())
+            .then(stuff => this.setState({'stuff': stuff})
+            ).catch(e => this.setState({error: true}))
     }
 
     closeModal = () => {
@@ -26,37 +42,32 @@ export default class Stuff extends React.Component {
         });
     };
 
-    componentDidMount() {
-        // const id =this.props.match.params.id;
-        const id = 0;
-        fetch('http://localhost:9176/stuff/' + id)
-            .then(res => res.json())
-            .then(stuff => this.setState({'stuff': stuff})
-            ).catch(e => this.setState({error: true}))
-        console.log(this.stuff)
-    }
-
     render() {
+
         return (
-            !this.state.error ? <div>
-                <div>
-                    <img src={this.state.stuff.img} alt=""/>
-                </div>
-                <div>
-                    <h3>{this.state.stuff.title}</h3>
-                    <h4>{"R$"+this.state.stuff.price}</h4>
-                    <button>Buy Now</button>
-                    <button onClick={this.openModal}>More Info</button>
-                </div>
+            !this.state.error ?
+                <div className='stuff'>
+                    <div className='stuff-img'>
+                        <img src={this.state.stuff.img} alt=""/>
+                        <ReactStars
+                            count={5}
+                            onChange={this.ratingChanged}
+                            size={50}
+                            activeColor="#ffd700"
+                        />
+                        <div className='review'>
+                            <p>1 reviews.</p>
+                        </div>
+                    </div>
+                    <div className='stuff-detail'>
+                        <h2>{this.state.stuff.title}</h2>
+                        <h4>{"R$"+this.state.stuff.price}</h4>
+                        <button className='stuff-detail-buy'>Buy Now  <img className='addToCartbtn' src={addToCart} alt=""/></button>
+                        <button className='stuff-detail-info' onClick={this.openModal}>More Info</button>
+                    </div>
+                    <DetailModal detail={this.state.stuff.detail} isOpen={this.state.isModalOpen} onClose={this.closeModal}/>
 
-                {/*{this.state.isModalOpen} ? <NotFound/>: <div className="dimmer">*/}
-                {/*<div className="modal-container">*/}
-                {/*    <h3>details</h3>*/}
-                {/*    <p>{this.state.stuff.detail}</p>*/}
-                {/*    <button onClick={this.closeModal}>close</button>*/}
-                {/*</div>*/}
-
-            </div> : <NotFound/>
+                </div> : <NotFound/>
 
         );
     }

@@ -3,8 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="49f869d8-582c-414f-8128-5e57d64b32c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/component/DetailModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/DetailModal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/component/DetailModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/DetailModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/component/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/component/Stuff.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/Stuff.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/component/StuffCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/StuffCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/component/StuffList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/StuffList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/component/Stuffs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/component/Stuffs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/server/movies-detail.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/server/movies.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/server/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../hw4/storeapp/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw4/storeapp/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +57,10 @@
       <workItem from="1651290769135" duration="5036000" />
       <workItem from="1651311598009" duration="687000" />
       <workItem from="1651327192483" duration="648000" />
+      <workItem from="1651376133091" duration="301000" />
+      <workItem from="1651524404735" duration="638000" />
+      <workItem from="1651559208280" duration="3000" />
+      <workItem from="1651561265246" duration="2388000" />
     </task>
     <servers />
   </component>

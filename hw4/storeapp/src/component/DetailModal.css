@@ -17,9 +17,30 @@
     height: 200px;
     margin: auto;
     background-color: #f5f5f5;
-    border: 3px solid #aaa;
+    border: none;
     border-radius: 5px;
-    text-align: right;
-    direction: rtl;
-    padding: 10px 30px 0 0;
+    text-align: left;
+    direction: ltr;
+    padding: 10px 10px 10px 20px;
+}
+
+.modal-container button{
+    background-color: red;
+    color: white;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+}
+.modal-container p{
+    height: 40%;
+}
+.modal-detail{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }

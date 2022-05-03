@@ -7,7 +7,7 @@ class DetailModal extends React.Component {
 
     render() {
         const {
-            city,
+            detail,
             isOpen,
             onClose,
         } = this.props;
@@ -17,10 +17,13 @@ class DetailModal extends React.Component {
         }
 
         return (
-            <div onClick={onClose} className="dimmer">
+            <div className="dimmer">
                 <div className="modal-container">
-                    <h3>details</h3>
-                    <p>{this.state.stuff.detail}</p>
+                    <h4>Details</h4>
+                    <p>{detail}</p>
+                    <div className='modal-detail'>
+                        <button onClick={onClose}> Close</button>
+                    </div>
                 </div>
             </div>
         );
