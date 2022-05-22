@@ -21,13 +21,13 @@ const sequelize = new Sequelize(
 
 const db = {};
 
-db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.user = require("../models/user.model.js")(sequelize, Sequelize);
 db.group = require("../models/group.model.js")(sequelize, Sequelize);
 db.join = require("../models/join.model.js")(sequelize, Sequelize);
 db.connection = require("../models/connection.model.js")(sequelize, Sequelize);
+db.chat = require("../models/chat.model.js")(sequelize, Sequelize);
 
 db.group.hasMany(db.user, {as: "users"});
 db.user.belongsTo(db.group, {

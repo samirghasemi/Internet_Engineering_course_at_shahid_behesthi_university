@@ -23,6 +23,7 @@ require("./app/routes/auth.routes")(app);
 require("./app/routes/group.routes")(app);
 require("./app/routes/join.routes")(app);
 require("./app/routes/connection.routes")(app);
+require("./app/routes/chat.routes")(app);
 
 // set port, listen for requests
 const PORT = 35300;
