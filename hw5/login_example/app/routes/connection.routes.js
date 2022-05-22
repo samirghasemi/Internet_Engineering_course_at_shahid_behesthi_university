@@ -24,7 +24,7 @@ module.exports = function (app) {
         [
             authJwt.verifyToken,
         ],
-        controller.setRequest()
+        controller.setRequest
     );
 
     app.post(
@@ -32,6 +32,6 @@ module.exports = function (app) {
         [
             authJwt.verifyToken,
         ],
-        controller.setRequestsAccept()
+        controller.setRequestAccept
     );
 };

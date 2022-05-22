@@ -15,15 +15,16 @@ extractToken=(req) => {
 verifyToken = (req, res, next) => {
   let token = extractToken(req);
   if (!token) {
-    console.log("token has problem")
+    // console.log("token has problem")
     return res.status(400).send({error: {message: "Bad request!"}});
   }
   jwt.verify(token, config.secret, (err, decoded) => {
     if (err) {
-      console.log("token has problem")
+      // console.log("token has problem")
       return res.status(400).send({error: {message: "Bad request!"}});
     }
     req.userId = decoded.userId;
+
     next();
   });
 };
