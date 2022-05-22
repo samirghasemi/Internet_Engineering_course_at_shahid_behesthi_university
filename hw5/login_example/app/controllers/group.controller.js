@@ -21,7 +21,10 @@ exports.myGroup = async (req, res) => {
         });
         // console.log(group)
         const users = await User.findAll({
-                attributes: ['id', 'name', 'email', 'rule']
+                attributes: ['id', 'name', 'email', 'rule'],
+                where:{
+                    groupId: user.groupId
+                }
             }
         )
         // console.log("problem3")
