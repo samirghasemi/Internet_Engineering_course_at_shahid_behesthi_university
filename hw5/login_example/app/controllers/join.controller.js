@@ -1,6 +1,3 @@
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-const config = require("../config/auth.config");
 const db = require("../models");
 const Group = db.group;
 const User = db.user;

@@ -1,25 +1,19 @@
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-const config = require("../config/auth.config");
 const db = require("../models");
 const Group = db.group;
 const User = db.user;
 
 exports.myGroup = async (req, res) => {
     try {
-        // console.log("problem0")
         const user = await User.findOne({
             where: {
                 id: req.userId,
             },
         });
-        // console.log(user)
         const group = await Group.findOne({
             where: {
                 id: user.groupId,
             },
         });
-        // console.log(group)
         const users = await User.findAll({
                 attributes: ['id', 'name', 'email', 'rule'],
                 where:{
@@ -27,7 +21,6 @@ exports.myGroup = async (req, res) => {
                 }
             }
         )
-        // console.log("problem3")
         return res.status(200).send({
             group: {
                 name: group.name,
