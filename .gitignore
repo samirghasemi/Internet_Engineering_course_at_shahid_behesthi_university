@@ -1,3 +1,9 @@
-*png
-*jpeg
-*jpg
+hw3/1/node_modules/*
+hw3/2/node_modules/*
+hw3/3/node_modules/*
+hw3/4/node_modules/*
+hw4/storeapp/node_modules/*
+hw5/chat_app/node_modules/*
+hw5/express_demo/node_modules/*
+hw5/login_example/node_modules/*
+hw5/node-js-express-login-example-master/node_modules/*
