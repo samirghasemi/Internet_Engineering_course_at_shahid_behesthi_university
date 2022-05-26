@@ -21,7 +21,6 @@ function App() {
                     <Route path="/laptops" children={<Stuffs type={'notebook'}/>}/>
                     <Route path="/cart" children={<Cart/>}/>
                     <Route component={NotFound} />
-
                 </Switch>
             </div>
         </BrowserRouter>

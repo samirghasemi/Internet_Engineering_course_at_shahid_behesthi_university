@@ -1,0 +1,38 @@
+.search-banner{
+    background-image: url("../assets/banner.jpg");
+    max-height: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.search-banner h1{
+    font-size: 80px;
+    margin: 3px;
+    font-family: sans-serif;
+    color: white;
+}
+.search-banner p{
+    font-size: 20px;
+    /*font-weight: ;*/
+    font-family: sans-serif;
+    color: #757575;
+}
+
+.form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+}
+.form-input{
+    font-family: sans-serif;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    border-style: solid;
+    padding-left: 10px;
+}
