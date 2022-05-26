@@ -1,0 +1,580 @@
+{
+	"info": {
+		"_postman_id": "4febb144-f6e4-4a8d-b267-35b11df77bdd",
+		"name": "hw5-IE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17120420"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Mohsen3\",\r\n  \"email\": \"test3@gmail.com\",\r\n  \"password\": \"12345678@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:35300/api/v1/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"test1@gmail.com\",\r\n  \"password\": \"12345678@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:35300/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "group",
+			"item": [
+				{
+					"name": "create group",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"group2\",\r\n  \"description\": \"group2 description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:35300/api/v1/groups",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"groups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my group",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:35300/api/v1/groups/my",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"groups",
+								"my"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "groups list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:35300/api/v1/groups",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"groups"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTY1MzIxODcyNywiZXhwIjoxNjUzMzA1MTI3fQ.tEDR8khKzpq6c1cN5Khy2I_4q549Dx6nNLamkcuUkiE",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "join",
+			"item": [
+				{
+					"name": "getRequests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:35300/api/v1/join_requests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"join_requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getRequestByGroup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:35300/api/v1/join_requests/group",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"join_requests",
+								"group"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:35300/api/v1/join_requests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"join_requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setRequestAccept",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"joinRequestId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:35300/api/v1/join_requests/accept",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"join_requests",
+								"accept"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Connection",
+			"item": [
+				{
+					"name": "getRequests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:35300/api/v1/connection_requests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"connection_requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setRequest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"groupId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:35300/api/v1/connection_requests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"connection_requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setRequestAccept",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"connectionRequestId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:35300/api/v1/connection_requests/accept",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"connection_requests",
+								"accept"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTY1MzIxODcyNywiZXhwIjoxNjUzMzA1MTI3fQ.tEDR8khKzpq6c1cN5Khy2I_4q549Dx6nNLamkcuUkiE",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Chat",
+			"item": [
+				{
+					"name": "getChats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:35300/api/v1/chats",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"chats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getChatsPerUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:35300/api/v1/chats/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"chats",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sendMessage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"message\": \"test chat\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:35300/api/v1/chats/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"api",
+								"v1",
+								"chats",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsImlhdCI6MTY1MzIxODcyNywiZXhwIjoxNjUzMzA1MTI3fQ.tEDR8khKzpq6c1cN5Khy2I_4q549Dx6nNLamkcuUkiE",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTY1MzIwNzUwMywiZXhwIjoxNjUzMjkzOTAzfQ.JGS8ks3l5IyEfE6TRBmipFrUJhJXia4dzR-AcnTSYlA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
