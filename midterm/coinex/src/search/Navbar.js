@@ -1,7 +1,7 @@
 import './index.css';
 import theme from "styled-theming";
 import styled from "styled-components";
-import {TOGGLE_DARKTHEME} from "../redux/actions";
+import {toggleDarkTheme} from "../redux/actions";
 import {useDispatch} from "react-redux";
 
 export const backgroundColor = theme("theme", {
@@ -60,7 +60,7 @@ function Navbar() {
             <Logo>
                 <p>IE Final Project</p>
             </Logo>
-            <Button onClick={() => dispatch({type: TOGGLE_DARKTHEME})}>
+            <Button onClick={() => dispatch(toggleDarkTheme())}>
                 Change Theme
             </Button>
         </SearchNavbar>

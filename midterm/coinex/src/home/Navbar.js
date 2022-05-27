@@ -1,8 +1,7 @@
 import './index.css';
-// import DarkThemeButton from "../DarkThemeButton";
 import theme from "styled-theming";
 import styled from "styled-components";
-import {TOGGLE_DARKTHEME} from "../redux/actions";
+import {toggleDarkTheme} from "../redux/actions";
 import {useDispatch} from "react-redux";
 
 export const borderColor = theme("theme", {
@@ -31,7 +30,7 @@ function Navbar() {
 
     return (
         <div className='navbar'>
-            <Button onClick={() => dispatch({type: TOGGLE_DARKTHEME})}>
+            <Button onClick={() => dispatch(toggleDarkTheme())}>
                 Change Theme
             </Button>
         </div>

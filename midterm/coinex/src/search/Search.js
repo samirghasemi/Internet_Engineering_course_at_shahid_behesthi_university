@@ -1,7 +1,9 @@
+import {useState} from "react";
 import backgroundImageDark from "../assets/banner.jpg"
 import theme from "styled-theming";
 import styled from "styled-components";
 import Navbar from "./Navbar";
+import Table from "./table";
 
 export const backgroundImage = theme("theme", {
     light: backgroundImageDark,
@@ -37,7 +39,7 @@ const Container = styled.div`
 
 const Form = styled.div`
   width: 80%;
-  margin:  10px auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -47,18 +49,34 @@ const Form = styled.div`
   background: ${backgroundColor};
 `;
 
-const Search = () =>(
-    <Container>
-        <Navbar/>
-        <div className='search-banner'>
-            <h1>Search Coin</h1>
-            <p>Get information From Here</p>
-        </div>
-        <Form>
-            <h3 className='form-title'>Cryptocurrency Prices By Market Cap</h3>
-            <input className='form-input' type="text" placeholder='Search For a Crypto Currency'/>
-        </Form>
-    </Container>
-);
+
+function Search() {
+    const [coins, setCoins] = useState([]);
+    const fetchDataFromCoingecko = (txt) => {
+        if (txt != '') {
+            fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h&ids=' + txt)
+                .then(res => res.json())
+                .then(item => setCoins(item)
+                ).catch(e => setCoins([]))
+        }
+    }
+
+    return (
+        <Container>
+            <Navbar/>
+            <div className='search-banner'>
+                <h1>Search Coin</h1>
+                <p>Get information From Here</p>
+            </div>
+            <Form>
+                <h3 className='form-title'>Cryptocurrency Prices By Market Cap</h3>
+                <input className='form-input' type="text" placeholder='Search For a Crypto Currency'
+                       onChange={e => fetchDataFromCoingecko(e.target.value)}/>
+                <Table coins={coins}/>
+            </Form>
+        </Container>
+    );
+}
+
 
 export default Search;

@@ -76,5 +76,6 @@
 }
 
 .home-right-box-inner {
+    display: flex;
     margin-top: 65vh;
 }

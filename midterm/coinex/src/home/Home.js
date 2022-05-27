@@ -1,9 +1,10 @@
-import {Link, Route, Routes} from "react-router-dom";
+import {Link} from "react-router-dom";
 import Navbar from "./Navbar";
 import styled from "styled-components";
 import backgroundImageDark from "../assets/background.png"
 import backgroundImageLight from "../assets/background-light.jpg"
 import theme from "styled-theming";
+import Card from "./Card";
 
 export const backgroundImage = theme("theme", {
     light: backgroundImageLight,
@@ -34,7 +35,7 @@ const Container = styled.div`
   justify-content: space-between;
   color: ${textColor};
 `;
-
+// const
 const Home = () => (
     <Container>
         <Navbar/>
@@ -47,7 +48,7 @@ const Home = () => (
                     <p>Shahid Beheshti University</p>
                     <p>IE Final Project</p>
                     <p className='button'>
-                        <Link to="/search" style={{ textDecoration: 'none' }}>
+                        <Link to="/search" style={{textDecoration: 'none', color: '#fff'}}>
                             SEARCH MORE
                         </Link>
                     </p>
@@ -56,10 +57,16 @@ const Home = () => (
             </div>
             <div className='home-right-box'>
                 <div className='home-right-box-inner'>
-                    <p>Search more</p>
+                    <Card></Card>
+                    <Card></Card>
+                    <Card></Card>
+
+                    {/*<p>hi!</p>*/}
                 </div>
             </div>
         </div>
     </Container>
 );
+
+
 export default Home;
