@@ -4,7 +4,10 @@ import styled from "styled-components";
 import backgroundImageDark from "../assets/background.png"
 import backgroundImageLight from "../assets/background-light.jpg"
 import theme from "styled-theming";
-
+export const borderColor = theme("theme", {
+    dark: "#fff",
+    light: "#10002B",
+});
 export const backgroundImage = theme("theme", {
     light: backgroundImageLight,
     dark: backgroundImageDark,
@@ -37,7 +40,7 @@ const Container = styled.div`
   justify-content: space-between;
   flex-direction: row;
   padding: 20px;
-
+  border-color: ${borderColor};
 
 `;
 // const
