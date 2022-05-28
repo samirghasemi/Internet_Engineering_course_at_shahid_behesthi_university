@@ -49,7 +49,7 @@ const val = {
     name: 'Bitcoin',
     price: 29263
 };
-const Card = () => (
+const Card = (props) => (
     <Container>
         <span>
             <img src={val.image} alt=""/>

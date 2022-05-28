@@ -1,6 +1,4 @@
-import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
-import {backgroundImage, textColor} from "../home/Home";
 import {addToList} from "../redux/actions";
 import {useDispatch} from "react-redux";
 
@@ -13,21 +11,6 @@ function Table(props) {
         dispatch(addToList(id))
         navigate("/search/"+id);
     }
-    const Container = styled.div`
-      background-image: url(${backgroundImage});
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height: 100vh;
-      max-width: 100%;
-      width: 100%;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-content: flex-start;
-      justify-content: space-between;
-      color: ${textColor};
-    `;
-
     if (coins.length > 0) {
         return (
             <table className='search-table'>
