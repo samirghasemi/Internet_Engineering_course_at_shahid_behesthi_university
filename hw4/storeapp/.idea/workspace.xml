@@ -1,109 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="16fa5b3f-52f9-4f2a-9312-91023aa2269e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/Internet-Engineering.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/Internet-Engineering.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw2/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw2/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw2/.idea/hw2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw2/.idea/hw2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw2/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw2/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw2/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw2/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/.idea/1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/.idea/1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/src/Timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/src/Timer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/src/Timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/src/Timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/1/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/1/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/.idea/2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/.idea/2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/src/__tests__/sample.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/src/__tests__/sample.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/src/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/src/input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/2/src/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/2/src/validators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/.idea/3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/.idea/3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/server/cities.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/server/cities.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/server/detail.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/server/detail.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/src/assets/images/raw_map.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/src/assets/images/raw_map.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/src/components/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/src/components/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/src/components/CityModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/src/components/CityModal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/src/components/CityModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/src/components/CityModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/src/components/IranMap.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/src/components/IranMap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/src/components/IranMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/src/components/IranMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/3/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/3/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/.idea/4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/.idea/4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/src/components/MovieCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/src/components/MovieCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/src/components/MovieDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/src/components/MovieDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/src/components/MovieList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/src/components/MovieList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/src/components/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/src/components/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/src/components/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/src/components/NotFound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/src/server/movies-detail.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/src/server/movies-detail.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/src/server/movies.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/src/server/movies.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/src/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/src/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hw3/4/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../hw3/4/src/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/storeapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/storeapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NotFound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/cart/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/cart/CartCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/cart/CartCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/modal/DetailModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/modal/DetailModal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/modal/DetailModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/modal/DetailModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/stuff/Stuff.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/stuff/Stuff.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/stuff/StuffCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/stuff/StuffCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/stuff/StuffList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/stuff/StuffList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/stuff/Stuffs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/stuff/Stuffs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/shopping/shopping-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shopping/shopping-actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/shopping/shopping-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shopping/shopping-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/shopping/shopping-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/shopping/shopping-types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../quiz1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../quiz1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../quiz1/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../quiz1/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="afd05a19-92e6-42ad-a03a-adeb176e7df3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,19 +36,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/media/abbas/000219BE0219BA1C/Users/samir/Documents/GitHub/Internet-Engineering/hw4/storeapp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\samir\Documents\GitHub\Internet-Engineering\hw4\storeapp\src" />
