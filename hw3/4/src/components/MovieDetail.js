@@ -5,7 +5,8 @@ export default class MovieDetail extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            movie: {}
+            movie: {},
+            error: false
         }
     }
 
@@ -18,7 +19,7 @@ export default class MovieDetail extends React.Component {
 
     render() {
         return (
-            <div className='movie-detail container'>
+            !this.state.error ? <div className='movie-detail container'>
                 <img className='movie-banner' src={this.state.movie.banner} alt=""/>
                 <div className="detail-body">
                     <div>
@@ -33,7 +34,7 @@ export default class MovieDetail extends React.Component {
                         <img className='detail-img' src={this.state.movie.image} alt=""/>
                     </div>
                 </div>
-            </div>
+            </div> : <NotFound/>
         )
     }
 }
