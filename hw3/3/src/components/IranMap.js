@@ -23,7 +23,7 @@ class IranMap extends React.Component {
     // }
 
     componentDidMount() {
-        fetch('http://localhost:9000/cities/').then(res => res.json()).then(citiesData  =>
+        fetch('http://localhost:9177/cities/').then(res => res.json()).then(citiesData  =>
             this.setState({'citiesData': citiesData })
         );
     }
@@ -32,7 +32,7 @@ class IranMap extends React.Component {
     cityClicked = (id) => (event) => {
         event.preventDefault();
         // Fetch city details and open modal
-        fetch('http://localhost:9000/cities/'+id).then(res => res.json()).then(selectedCity  =>
+        fetch('http://localhost:9177/cities/'+id).then(res => res.json()).then(selectedCity  =>
             this.setState({'selectedCity': selectedCity })
         );
         this.state.isModalOpen = true;
