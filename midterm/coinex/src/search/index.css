@@ -1,0 +1,92 @@
+.search-banner{
+    background-image: url("../assets/banner.jpg");
+    max-height: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.search-banner h1{
+    font-size: 80px;
+    margin: 3px;
+    font-family: sans-serif;
+    color: white;
+}
+.search-banner p{
+    font-size: 20px;
+    /*font-weight: ;*/
+    font-family: sans-serif;
+    color: #757575;
+}
+
+.form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+}
+.form-input{
+    font-family: sans-serif;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    border-style: solid;
+    padding-left: 10px;
+}
+.search-table{
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+
+}
+.search-table tbody{
+
+}
+.search-table thead{
+    /*border-c: ;*/
+    height: 50px;
+    background-color: #EEBC1D;
+    border-radius: 10px;
+    color: black;
+    /*border: 10px solid salmon;*/
+}
+.search-table th, td{
+    text-align: left;
+    padding: 8px;
+}
+.search-table tr{
+    height: 70px;
+    margin-top: 100px;
+    border-bottom: 2px solid #8d8d8d;
+}
+.search-table tr:last-child {
+    border: none;
+}
+.search-table .image-coin{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.search-table span{
+    margin-right: 10px;
+}
+.search-table span img{
+    height: 60px;
+}
+.coin{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.coin p{
+    width: 80%;
+}
