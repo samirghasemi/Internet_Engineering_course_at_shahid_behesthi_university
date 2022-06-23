@@ -30,24 +30,4 @@ db.course = require("../models/course.model.js")(sequelize, Sequelize);
 db.student.hasMany(db.course);
 db.course.belongsTo(db.student);
 
-// db.group.hasMany(db.join, {as: "joins"});
-// db.join.belongsTo(db.group, {
-//     as: "groups",
-//     foreignKey: "groupId",
-// });
-//
-// db.user.hasMany(db.join, {as: "joins"});
-// db.join.belongsTo(db.user, {
-//     as: "users",
-//     foreignKey: "userId",
-// });
-//
-// db.group.hasMany(db.connection, {as: "connections"});
-// db.connection.belongsTo(db.group, {
-//     as: "groups",
-//     foreignKey: "groupId",
-// })
-
-// db.ROLES = ["user", "admin", "moderator"];
-
 module.exports = db;
