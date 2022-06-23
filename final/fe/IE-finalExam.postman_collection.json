@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "9c4fff03-feb2-4161-8376-a6e7c6d9131a",
+		"name": "IE-finalExam",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17120420"
+	},
+	"item": [
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"studentid\": 97243037\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:35300/students",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"studentid\": 97243037\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:35300/students/97243037",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"students",
+								"97243037"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:35300/students/97243034",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"students",
+								"97243034"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:35300/students",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "course",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n     \"name\": \"software engineering\",\r\n     \"id\": 17,\r\n     \"grade\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:35300/course/97243037/course",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"course",
+								"97243037",
+								"course"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n     \"name\": \"internet engineering\",\r\n     \"id\": 10,\r\n     \"grade\": 10.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:35300/course/97243039/10",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"course",
+								"97243039",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:35300/course/97243037/17",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"course",
+								"97243037",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:35300/course/97243037",
+							"host": [
+								"localhost"
+							],
+							"port": "35300",
+							"path": [
+								"course",
+								"97243037"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
