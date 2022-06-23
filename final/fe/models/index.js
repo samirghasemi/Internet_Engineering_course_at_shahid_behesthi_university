@@ -27,11 +27,8 @@ db.student = require("./student.model.js")(sequelize, Sequelize);
 db.course = require("../models/course.model.js")(sequelize, Sequelize);
 
 
-db.student.hasMany(db.course, {as: "courses"});
-db.course.belongsTo(db.student, {
-    as: "students",
-    foreignKey: "student_id",
-});
+db.student.hasMany(db.course);
+db.course.belongsTo(db.student);
 
 // db.group.hasMany(db.join, {as: "joins"});
 // db.join.belongsTo(db.group, {

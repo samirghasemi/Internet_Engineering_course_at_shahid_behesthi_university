@@ -24,7 +24,7 @@ db.sequelize.sync();
 // require("./app/routes/connection.routes")(app);
 // require("./app/routes/chat.routes")(app);
 require("./routes/student.router")(app)
-// require("./routes/course.router")(app)
+require("./routes/course.router")(app)
 // set port, listen for requests
 const PORT = 35300;
 app.listen(PORT, () => {

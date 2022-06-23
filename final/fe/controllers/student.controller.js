@@ -1,54 +1,158 @@
 const db = require("../models");
 // const config = require("../config/auth.config");
-const User = db.user;
+const Student = db.student;
+const Course = db.course;
+const Sequelize = db.sequelize;
 
-
-exports.create = async (req, res) => {
+exports.get = async (req, res) => {
     try {
-        const user = await User.create({
-            student_id: req.body.studentid,
-            password: bcrypt.hashSync(req.body.password, 8),
+
+        const students = await Student.findAll({
+            attributes:[
+                         ['student_id','studentid'] , 'average' , ['updatedAt', 'last_updated']
+            ],
+            include: {model: Course,as: 'courses'}
         });
-        const token = jwt.sign({userId: user.id}, config.secret, {
-            expiresIn: 86400, // 24 hours
-        });
+
         return res.status(200).send({
-            token: token,
-            message: "successful"
+            size: students.length,
+            students : students
         });
     } catch (error) {
-        res.status(400).send({error: {message: "Bad request!"}});
+        console.log(error)
+        res.status(400).send(
+            {
+                error:
+                    {
+                        message: "Bad request!"
+                    }
+            }
+        );
     }
 };
-
-exports.login = async (req, res) => {
+exports.create = async (req, res) => {
     try {
-        const user = await User.findOne({
-            where: {
-                email: req.body.email,
-            },
+        // console.log(req.body.studentid)
+        const student = await Student.create({
+            student_id: req.body.studentid,
         });
-        if (!user) {
-            return res.status(400).send({error: {message: "Bad request!"}});
-        }
-        const passwordIsValid = bcrypt.compareSync(
-            req.body.password,
-            user.password
-        );
 
-        if (!passwordIsValid) {
-            return res.status(400).send({error: {message: "Bad request!"}});
-        }
-
-        const token = jwt.sign({userId: user.id}, config.secret, {
-            expiresIn: 86400, // 24 hours
-        });
 
         return res.status(200).send({
-            token: token,
-            message: "successful"
+            studentid: student.student_id,
+            average: student.average,
+            courses: [],
+            last_updated: student.updatedAt,
+            code: 200,
+            message: "student added successfully!"
         });
     } catch (error) {
-        return res.status(400).send({error: {message: "Bad request!"}});
+        res.status(400).send(
+            {
+                error:
+                    {
+                        message: "Bad request!"
+                    }
+            }
+        );
+    }
+};
+exports.update = async (req, res) => {
+    try {
+        const temp_student = await Student.update({
+                student_id: req.body.studentid,
+            },
+            {
+                where: {
+                    student_id: req.params.id,
+                }
+            });
+        if(temp_student[0] == 0){
+            return res.status(400).send({error:{message: "this user is not exists!"}});
+        }
+        const student = await Student.findOne({
+            where: {
+                student_id: req.body.studentid,
+            },
+        });
+        // console.log(student)
+        const courses = await Course.findAll({
+                attributes: ['name', ['course_id', 'id'], 'grade'],
+                where: {
+                    studentId: student.id
+                }
+            }
+        )
+
+        return res.status(200).send({
+            studentid: student.student_id,
+            average: student.average,
+            courses: courses,
+            last_updated: student.updatedAt,
+            code: 200,
+            message: "studentid changed successfully!"
+        });
+    } catch (error) {
+        res.status(400).send(
+            {
+                error:
+                    {
+                        message: "Bad request!"
+                    }
+            }
+        );
+    }
+};
+exports.delete = async (req, res) => {
+    try {
+
+        const student = await Student.findOne({
+            where: {
+                student_id: req.params.id,
+            },
+        });
+        if(!student){
+            return res.status(400).send({error:{message: "this user is not exists!"}});
+        }
+        // console.log(student)
+        const courses = await Course.findAll({
+                attributes: ['name', ['course_id', 'id'], 'grade'],
+                where: {
+                    studentId: student.id
+                }
+            }
+        )
+        // console.log(courses)
+        const deleted_student = await Student.destroy(
+            {
+                where: {
+                    student_id: req.params.id,
+                }
+            });
+        // console.log(deleted_student)
+        const deleted_course = await Course.destroy(
+            {
+                where: {
+                    studentId: student.id,
+                }
+            });
+        // console.log(deleted_course)
+        return res.status(200).send({
+            studentid: student.student_id,
+            average: student.average,
+            courses: courses,
+            last_updated: student.updatedAt,
+            code: 200,
+            message: "student deleted successfully!"
+        });
+    } catch (error) {
+        res.status(400).send(
+            {
+                error:
+                    {
+                        message: "Bad request!"
+                    }
+            }
+        );
     }
 };

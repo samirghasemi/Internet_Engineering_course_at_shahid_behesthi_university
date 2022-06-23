@@ -10,24 +10,24 @@ module.exports = function(app) {
     next();
   });
 
-  // app.get(
-  //     "/students",
-  //     controller.get
-  // );
+  app.get(
+      "/students",
+      controller.get
+  );
 
   app.post(
       "/students",
       controller.create
   );
 
-  // app.put(
-  //     "/students/:id",
-  //     controller.update
-  // );
-  //
-  // app.delete(
-  //     "/students/:id",
-  //     controller.delete
-  // );
+  app.put(
+      "/students/:id",
+      controller.update
+  );
+
+  app.delete(
+      "/students/:id",
+      controller.delete
+  );
 
 };
