@@ -78,7 +78,7 @@ exports.update = async (req, res) => {
         });
 
         return res.status(200).send({
-            studentid: student.student_id,
+            studentid: req.params.id,
             average: student.average,
             courses: student.courses,
             last_updated: student.updatedAt,
